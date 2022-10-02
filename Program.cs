@@ -4,28 +4,6 @@
 3, 5 -> 243 (3⁵)
 
 2, 4 -> 16
-
-Console.WriteLine("Введите число");
-int userNumber = Convert.ToInt32(Console.ReadLine());
-int count = 0;
-while(userNumber > 0)
-{
-userNumber = userNumber / 10;
-count++;
-}
-Console.WriteLine(count);
-
-
-/* Идеальное решение
-Console.WriteLine("Введите число");
-int userNumber = Convert.ToInt32(Console.ReadLine());
-userNumber = Math.Abs(userNumber);
-int result = 1;
-if(userNumber != 0)
-{
-    result = (int)Math.Log10(userNumber) + 1;
-}
-Console.WriteLine($"Количество знаков в числе {result}");
 */
 
 Console.Clear();  
